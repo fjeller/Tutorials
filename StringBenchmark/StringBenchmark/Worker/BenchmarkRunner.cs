@@ -42,6 +42,7 @@ namespace StringBenchmark.Worker
 			string result = builder.ToString();
 
 			watch.Stop();
+			
 			File.WriteAllText("stringbuilder.txt", result);
 
 			return watch.Elapsed;

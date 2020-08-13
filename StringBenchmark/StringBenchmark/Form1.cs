@@ -28,9 +28,9 @@ namespace StringBenchmark
 				result = 10000;  // Default Value
 			}
 
-			if (result > 100000)
+			if (result > 30000)
 			{
-				result = 100000;
+				result = 30000;
 			}
 
 			this.txtStringsCount.Text = result.ToString();
@@ -41,8 +41,6 @@ namespace StringBenchmark
 		{
 			this.lblInfo.Text = $"Running Benchmark for String with {stringsCount} Strings";
 
-			Application.DoEvents();
-
 			TimeSpan result = BenchmarkRunner.GetStringConcatTime(stringsCount);
 
 			return result;
@@ -51,8 +49,6 @@ namespace StringBenchmark
 		private TimeSpan RunStringBuilderBenchmark(int stringsCount)
 		{
 			this.lblInfo.Text = $"Running Benchmark for StringBuilder with {stringsCount} Strings";
-
-			Application.DoEvents();
 
 			TimeSpan result = BenchmarkRunner.GetStringBuilderConcatTime(stringsCount);
 
