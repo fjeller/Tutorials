@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MvcTest.Data.Postgres/MvcTest.Data.Postgres.csproj" Id="144c7b82-84e4-46ae-ae7e-db81332adfda" />
+  <Project Path="MvcTest/MvcTest.csproj" />
+</Solution>

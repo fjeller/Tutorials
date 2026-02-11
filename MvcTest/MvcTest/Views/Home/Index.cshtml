@@ -1,0 +1,10 @@
+﻿@model List<MvcTest.Data.Postgres.DataAccess.Entities.Machine>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach(var machine in Model)
+{
+    <p>(@machine.Id) - @machine.Status</p>
+}
